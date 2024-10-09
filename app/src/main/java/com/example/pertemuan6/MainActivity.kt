@@ -31,10 +31,11 @@ class MainActivity : AppCompatActivity() {
 
 //            Kehadiran Dropdown=======================================
             val adapterKehadiran = ArrayAdapter<String>(
-                this,
+                this@MainActivity,
                 android.R.layout.simple_spinner_item,
                 kehadiranList
             )
+            adapterKehadiran.setDropDownViewSet
             kehadiranSpinner.adapter = adapterKehadiran
 
 //            Selected Kehadiran
